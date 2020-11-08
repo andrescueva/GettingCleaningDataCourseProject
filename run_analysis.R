@@ -10,6 +10,20 @@ print(datasetZip)
 download.file(fileUrl, destfile = datasetZip, method = "curl")
 list.files(dirDataset)
 unzip(datasetZip, exdir=dirDataset, overwrite = TRUE)
+list.files(dirDataset)
+setwd(dirDataset)
+###Merge training and test sets
+x_test <- read.table("UCI HAR Dataset/test/X_test.txt")
+y_test <- read.table("UCI HAR Dataset/test/y_test.txt")
+subject_test <- read.table("UCI HAR Dataset/test/subject_test.txt")
+
+x_train <- read.table("UCI HAR Dataset/train/X_train.txt")
+y_train <- read.table("UCI HAR Dataset/train/y_train.txt")
+subject_train <- read.table("UCI HAR Dataset/train/subject_train.txt")
+
+x_dataset <- rbind(x_test, x_train)
+y_dataset <- rbind(y_test, y_train)
+subject_dataset <- rbind(subject_test, subject_train)
 
 
 #2.Extracts only the measurements on the mean and standard deviation 
