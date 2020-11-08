@@ -21,4 +21,4 @@
   * values: 1 to 30
 * Activity: activities each volunteers performed in the datasete UCI HAR Dataset
   * values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-* variables colunms[3:68]: features described in UCI HAR Dataset/features_info.txt
+* variables colunms[3:68]: features described in dataset UCI HAR Dataset, file UCI HAR Dataset/features_info.txt
