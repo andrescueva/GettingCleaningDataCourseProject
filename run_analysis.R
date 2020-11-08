@@ -1,3 +1,6 @@
+## rstduio1.3
+## version.string R version 3.3.3 (2017-03-06)
+## system         x86_64, linux-gnu  
 #1.Merges the training and the test sets to create one data set.
 ### Download dataset and unzip
 fileUrl    <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
