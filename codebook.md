@@ -24,5 +24,4 @@
 * variables colunms[3:68]: features described in dataset UCI HAR Dataset[1], file: UCI HAR Dataset/features_info.txt
 
 Reference list:
-[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
-Downloaded from  http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+* [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012. Downloaded from  http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
