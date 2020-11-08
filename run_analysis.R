@@ -31,6 +31,16 @@ subject_dataset <- rbind(subject_test, subject_train)
 
 #2.Extracts only the measurements on the mean and standard deviation 
   #for each measurement.
+setwd(dirDataset)
+features <- read.table("UCI HAR Dataset/features.txt")
+features[,2] <- as.character(features[,2])
+# filter features names that contains mean() and std() 
+filteredIndexFeatures <- grep("-(mean|std)\\(\\)",features[,2])
+feautureNames <- features[filteredIndexFeatures,2]
+# Filter columns measurements std() and mean() on x_dataset
+x_dataset <- x_dataset[filteredIndexFeatures]
+# join datasets subject, y and X
+dataset <- cbind(subject_dataset, y_dataset,x_dataset)
 #3.Uses descriptive activity names to name the activities in the data set
 #4.Appropriately labels the data set with descriptive variable names.
 #5.From the data set in step 4, creates a second, 
