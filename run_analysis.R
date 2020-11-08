@@ -47,6 +47,11 @@ activities[,2] <- as.character(activities[,2])
 print(activities[,2])
 dataset$Activity<-factor(dataset$Activity, levels = activities[,1], labels = activities[,2])
 #4.Appropriately labels the data set with descriptive variable names.
+labels <- names(dataset)
+labels <- gsub("std\\(\\)","Sdt",labels)
+labels <- gsub("mean\\(\\)","Mean",labels)
+labels <- gsub("-","",labels)
+colnames(dataset)<-labels
 #5.From the data set in step 4, creates a second, 
   #independent tidy data set with the average of each variable for 
   #each activity and each subject
