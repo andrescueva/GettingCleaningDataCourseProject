@@ -1,8 +1,8 @@
 # GettingCleaningDataCourseProject
 ## Files:
-- run_analysis.R: code to download the raw dataset, merge sets, filter columns, and create the requested tidy dataset. 
+- run_analysis.R: code, properly commented, to download the raw dataset, merge sets, filter columns, and create the requested tidy dataset. 
 - tidydataset.txt: tidy data set with the average of each variable for each activity and each subject
-- codebook.md: describing each variable and its values in the tidy data set.
+- codebook.md: code book describing each variable and its values in the tidy data set.
 
 ## System:
 - rstduio: version 1.3
