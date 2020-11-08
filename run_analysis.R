@@ -24,14 +24,14 @@ x_train <- read.table("UCI HAR Dataset/train/X_train.txt")
 y_train <- read.table("UCI HAR Dataset/train/y_train.txt")
 subject_train <- read.table("UCI HAR Dataset/train/subject_train.txt")
 
+# keep datasets as independent ones for step 2.
 x_dataset <- rbind(x_test, x_train)
 y_dataset <- rbind(y_test, y_train)
 subject_dataset <- rbind(subject_test, subject_train)
 
-
 #2.Extracts only the measurements on the mean and standard deviation 
   #for each measurement.
-#3.Ues descriptive activity names to name the activities in the data set
+#3.Uses descriptive activity names to name the activities in the data set
 #4.Appropriately labels the data set with descriptive variable names.
 #5.From the data set in step 4, creates a second, 
   #independent tidy data set with the average of each variable for 
